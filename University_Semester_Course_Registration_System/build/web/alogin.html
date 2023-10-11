@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/15952677a2.js" crossorigin="anonymous"></script>
+    <title>Login | Course Registration</title>
+    <!--<link rel="stylesheet" href="login.css"> -->
+     <style>
+        *{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+    /*margin: 0;
+    padding: 0;*/
+}
+
+body{
+    /* background: url("C:\Users\Muhammad Vasim\Documents\NetBeansProjects\SampleWebApplication\web\images\bg5.jpg") no-repeat center center fixed; */
+    background: url(bg5.jpg) no-repeat center center fixed;
+
+    background-size: cover;
+    /* background-color: orange; */
+}
+
+.container{
+    position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: greenyellow;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    /*position:absolute;
+    top: 25%;
+    left: 40%;
+    border-radius: 25px;*/
+}
+
+.container form{
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+.container h1{
+    width: 68%;
+    display: inline-block;
+    font-size: 40px;
+    border-bottom: 5px solid black;
+    margin-bottom: 15px;
+    padding: 13px;
+}
+
+/*.box{
+    width: 150%;
+    margin: 22px 0px;
+    border-bottom: 2px solid black;
+}
+*/
+.pass{
+    margin: 25px;
+}
+
+form .box{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+  }
+
+.box input{
+    /* width: 100%; */
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+    /*width: 75%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: red;
+    background: none;*/
+}
+
+
+.box i{
+    width: 25px;
+    text-align: center;
+}
+
+.btn{
+    cursor: pointer;
+    outline: none;
+    width: 25%;
+    margin: 12px 0;
+    padding: 10px 2px;
+    border: 2px solid purple;
+    border-radius: 10px;
+    font-size: 18px;
+    background: none;
+    font-weight: bold;
+}
+
+.btn:hover{
+    color: white;
+    background: black;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Admin Login</h1>
+        <form action="New11" method="post">
+            <div class="box">
+                <i class="fa fa-envelope"></i>
+                <input type="text" name="Username" id="Username" placeholder="Enter Your Username" required>
+            </div>
+            <div class="box">
+                <i class="fa fa-key"></i>
+                <input type="password" name="password" id="password" placeholder="Enter Your Password" required>
+            </div>
+                <input type="submit" value="login" class="btn">
+                <span class="pass">
+                <a href="areset.html">Reset Password?</a>
+                </span>
+        </form>
+    </div>
+</body>
+
+</html>

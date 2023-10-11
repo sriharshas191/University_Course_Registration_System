@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>Admin Home | Course Registration</title>
+  <!--<link rel="stylesheet" type="text/css" href="style2.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/brands.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(225);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-row: 1 / span 2;
+}
+div.item1
+{
+font-size:40px;
+}
+div.item2
+{
+font-size:50px;
+text-align:center;
+}
+h1{
+  font-size: 40px;
+}
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 620px; 
+}
+.column2 {
+  float: right;
+  width: 75%;
+  padding: 10px;
+  height: 620px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body{
+       margin: 0;
+       padding: 0;
+       font-family: sans-serif;
+      }
+.container{
+        position: relative;
+        width: 1200px;
+        height: 50px;
+        margin: 140px auto;
+}
+div.icon
+{
+background-color:MediumSeaGreen;
+}
+.container .box{
+        position: relative;
+        width: calc(400px - 70px);
+        height: calc(300px - 70px);
+        background: #000;
+        float: left;
+        margin: 10px;
+        left:40px;
+        bottom:100px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 5px;
+}
+.container .box .icon{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color:MediumSeaGreen;
+     transition: 0.5s;
+     z-index: 1;
+}
+.container .box:hover .icon{
+     top: 20px;
+     left: calc(50% - 40px);
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+}
+.container .box .icon .fa{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 80px;
+     transition: 0.5s;
+     color: #fff;
+}
+.container .box:hover .icon .fa{
+   font-size:30px;
+}
+.container .box .content{
+    position:absolute;
+    top:100%;
+    height:calc(100% - 100px);
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    transition:0.5s;
+    opacity:0;
+}
+.container .box:hover .content{
+    top:100px;
+    opacity:1;
+}
+.container .box .content h3{
+   margin:0 0 10px;
+   padding:0;
+   color:#fff;
+   font-size:24px;
+}
+.container .box .content p{
+   margin:0;
+   padding:0;
+   color:#fff;
+}
+.container .box:nth-child(1).icon
+{
+    background:pink;
+}
+.container .box:nth-child(1)
+{
+  background:orange;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="item1">VIGNAN FOUNDATION FOR SCIENCE TECHNOLOGY AND RESEARCH</div>
+</div>
+<div class="row">
+  <div class="column1" style="background-color:#aaa;">
+  <div class="grid-container">
+  <div class="item2">PROFILE</div>
+  </div>
+  <div class="a">ADMIN ID :</div>
+  <div class="b">ADMIN NAME :</div>
+  <div class="c">DEPARTMENT :</div>
+  </div>
+  <div class="column2" style="background-color:#bbb;">
+    <div class="container">
+        <div class="box">
+              <div class="icon"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+              <div class="content">
+              <a href="ADD ACCOUNT.html"><h3><center>ADD ACCOUNT</center></h3></a>
+              </div>
+        </div>
+     <div class="container">
+        <div class="box">
+              <div class="icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+              <div class="content">
+              <a href="addstudent.html"><h3>ADD STUDENT</h3></a>
+              </div>
+        </div>
+     <div class="container">
+        <div class="box">
+              <div class="icon"><i class="fa fa-filter" aria-hidden="true"></i></div>
+              <div class="content">
+              <a href="studentdata.html"><h3>REGISTERED STUDENTS</h3></a>
+              </div>
+        </div>
+     <div class="container">
+        <div class="box">
+              <div class="icon"><i class="fa fa-ban" aria-hidden="true"></i></div>
+              <div class="content">
+              <a href="notregistered.html"><h3>STUDENTS NOT YET REGISTER</h3></a>
+              </div>
+        </div>
+    <div class="container">
+        <div class="box">
+              <div class="icon"><i class="fa fa-university" aria-hidden="true"></i></div>
+              <div class="content">
+              <a href="payment.html"><h3>PAYMENT DETAILS</h3></a>
+              </div>
+        </div>
+     <div class="container">
+        <div class="box">
+              <div class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></div>
+              <div class="content">
+              <h3>  SIGN OUT  </h3>
+              </div>
+        </div>
+</div>
+</body>
+</html>
